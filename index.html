@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="spinner"></div>
+</div>  
+
+    <nav class="navbar">
+  <h2 class="logo">Jay Patel</h2>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#resume">Resume</a></li>
+  </ul>
+</nav>
+
+  <header>
+  <img src="image/jay.jpg" alt="My Photo" class="profile">
+  <h1>Jay Patel</h1>
+  <p>UI/UX Designer , frontend Developer & Student</p>
+</header>
+
+<div class="card" data-aos="fade-up">
+  <section id="about">
+    <h2>About Me</h2>
+    <p class="learning">
+  While building this project, I worked on handling user data, managing records, and improving overall system functionality.
+</p>
+    <p>I am an MCA student who is passionate about UI/UX design and frontend development. 
+        I have learned the basics of multiple programming languages and I am actively working
+        on improving my practical skills by building projects. I enjoy creating simple, clean,
+        and user-friendly interfaces.</p>
+  </section>
+  </div>
+
+  <div class="card" data-aos="fade-up">
+  <section id="projects">
+  <h2>Projects</h2>
+
+  <p class="tags">PHP • MySQL • CRUD</p>
+
+<div class="project-gallery">
+  <div class="img-box">
+    <img src="image/home.jpeg" onclick="openImage(this.src)">
+  </div>
+  <div class="img-box">
+    <img src="image/user.jpeg" onclick="openImage(this.src)">
+  </div>
+   <div class="img-box">
+    <img src="image/admin.jpeg" onclick="openImage(this.src)">
+  </div>
+</div>
+
+ 
+
+    <h3>Vehicle Service Management System</h3>
+
+     <p>
+    A web-based system built using HTML , CSS , JS , PHP and MySQL to manage vehicle service records,
+    including admin panel, user management, and service tracking.
+  </p>
+
+    <a href="https://github.com/jayyyyyy-yt/vehicle-service-management-system" target="_blank" class="btn">
+      View Code
+    </a>
+  </div>
+
+</section>
+  </div>
+
+
+  <div class="card" data-aos="fade-up">
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: pateljay5061@gmail.com</p>
+    <p>Phone: +91 7974946479</p>
+  </section>
+  </div>
+
+  <section id="resume">
+  <h2>Resume</h2>
+
+  <div class="card" data-aos="fade-up">
+
+    <h2>My Resume</h2>
+
+    <p>
+      You can view or download my resume to learn more about my skills,
+      education, and experience.
+    </p>
+
+    <a href="resume.pdf" target="_blank" class="btn">
+      📄 View Resume
+    </a>
+
+  </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+function openImage(src) {
+  window.open(src, "_blank");
+}
+</script>
+
+<script>
+window.onload = function() {
+  document.getElementById("loader").style.display = "none";
+};
+</script>
+
+</body>
+</html>
