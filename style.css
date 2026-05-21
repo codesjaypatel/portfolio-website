@@ -138,9 +138,9 @@ section {
   background: rgba(0,0,0,0.7);
   backdrop-filter: blur(10px);
   position: fixed;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
+  top: 0%;
+  z-index: 900;
+  width: 97%;
 }
 
 .nav-links {
